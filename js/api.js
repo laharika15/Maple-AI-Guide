@@ -96,7 +96,7 @@ export async function sendChatMessage(history, promptText, mode = 'english') {
     parts: [{ text: promptText }]
   });
 
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=${key}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`;
 
   try {
     const response = await fetch(url, {
