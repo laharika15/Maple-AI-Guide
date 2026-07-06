@@ -25,7 +25,7 @@ graph TD
     CultureJS -->|Reads API Key| LocalStorage
     
     CultureJS -->|Queries Client-Side| APIJS[api.js Gemini Gateway]
-    APIJS -->|Generates Prompt| Gemini[Gemini 1.5 Pro AI Service]
+    APIJS -->|Generates Prompt| Gemini[Gemini 2.5 Flash AI Service]
 ```
 
 ---
@@ -44,7 +44,7 @@ flowchart TD
     CheckAPI -- Yes --> LoadKey[Retrieve API Key from LocalStorage]
     LoadKey --> UserMsg[User inputs practice dialogue message]
     UserMsg --> Sanitize[Sanitize input via security.js]
-    Sanitize --> SendRequest[Fetch Google Gemini 1.5 Pro API]
+    Sanitize --> SendRequest[Fetch Google Gemini 2.5 Flash API]
     SendRequest --> RecieveReply[Format AI response & append Canada.ca disclaimer]
     RecieveReply --> RenderChat[Render bubble into chat feed window]
 ```
@@ -81,7 +81,7 @@ flowchart LR
 
 ### 3. Language & Local Culture Coach
 * **Vocabulary Flashcards**: CSS 3D-flippable flashcards to review local terms (e.g. *Loonie*, *Toonie*, *Double-Double*) and etiquette rules.
-* **Roleplay Practice Room**: Practice scenarios (like ordering coffee at Tim Hortons or calling a landlord) using Gemini 1.5 Pro.
+* **Roleplay Practice Room**: Practice scenarios (like ordering coffee at Tim Hortons or calling a landlord) using Gemini 2.5 Flash.
 
 ### 4. City Selector & Cost of Living Estimator
 * **Custom Budgeting**: Sliders to allocate Rent, Food, Utilities, Transit, and Misc budgets.
